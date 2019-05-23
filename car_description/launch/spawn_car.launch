@@ -1,0 +1,14 @@
+<launch>
+
+  <arg name="y" default="-0.4"/>
+
+  <param name="robot_description" command="cat $(find car_description)/urdf/simple_car_description_gazebo.urdf"/>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf
+      -model car -y $(arg y)"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="true"/>
+  </node>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+</launch>
