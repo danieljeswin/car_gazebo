@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="circuit">
+    <static>true</static>
+
+    <link name="OuterWall1">
+        <collision name="collision1">
+         <pose>0 9 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual1">
+          <pose>0 9 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="OuterWall2">
+        <collision name="collision2">
+         <pose>0 -1 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual2">
+          <pose>0 -1 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="OuterWall3">
+        <collision name="collision3">
+         <pose>4.9 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>9.8 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual3">
+          <pose>4.9 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>9.8 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="OuterWall4">
+        <collision name="collision4">
+         <pose>-4.9 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>9.8 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual4">
+          <pose>-4.9 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>9.8 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="InnerWall1">
+        <collision name="collision5">
+         <pose>0 7.7 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>7.2 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual5">
+          <pose>0 7.7 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>7.2 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="InnerWall2">
+        <collision name="collision6">
+         <pose>0 0.3 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>7.2 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual6">
+          <pose>0 0.3 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>7.2 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="InnerWall3">
+        <collision name="collision7">
+         <pose>3.7 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>7.6 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual7">
+          <pose>3.7 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>7.6 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+    <link name="InnerWall4">
+        <collision name="collision8">
+         <pose>-3.7 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>7.6 0.2 1.2</size>
+            </box>
+          </geometry>
+       </collision>
+
+        <visual name="visual8">
+          <pose>-3.7 4 0 0 0 1.5707</pose>
+          <geometry>
+            <box>
+              <size>7.6 0.2 1.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>Gazebo/Orange</script>
+         </material>
+        </visual>
+    </link>
+
+
+  </model>
+</sdf>
