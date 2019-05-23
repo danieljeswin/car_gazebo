@@ -1,0 +1,7 @@
+<launch>
+    <rosparam file="$(find car_control)/config/laser_control.yaml" command="load"/>
+
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" args="joint_state_controller laser_controller"/>
+
+</launch>

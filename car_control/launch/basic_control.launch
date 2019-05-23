@@ -1,0 +1,7 @@
+<launch>
+    <rosparam file="$(find car_control)/config/basic_control.yaml" command="load"/>
+
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" args="joint_state_controller left_front_controller right_front_controller left_rear_controller right_rear_controller"/>
+
+</launch>
