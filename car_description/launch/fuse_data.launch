@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="robot_localization" type="ekf_localization_node" name="fuse_imu_odom" clear_params="true">
+    <rosparam command="load" file="$(find car_description)/config/fuse_imu_odom.yaml" />
+  </node>
+
+</launch>
